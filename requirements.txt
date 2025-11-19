@@ -1,0 +1,25 @@
+langchain
+langchain-openai
+ipykernel
+python-dotenv
+langchain-community
+langchain_core
+pandas
+pypdf # Used for load the pdf files in LangChain
+bs4 # bs - BeautifulSoup : library for web scraping and parsing HTML or XML documents
+arxiv # Used to load research papers (IEEE) from arxiv community. Resource Link: https://python.langchain.com/v0.1/docs/integrations/providers/arxiv/#document-loader
+pymupdf # Dependent library of "arxiv".
+wikipedia # Used to load wikipedia web-site data. Resource Link: https://python.langchain.com/v0.1/docs/integrations/document_loaders/wikipedia/#examples
+langchain_text_splitters # Used split the documents : In RAG STAGE - 2
+lxml # Dependent library of "langchain_text_splitters" : Helps to split HTML pages : Used inside "HTMLHeaderTextSplitter"
+chroma # To use vector store Chroma DB.
+langchain_openai # To use open AI models.
+sentence-transformers # To use HuggingFace models.
+langchain-huggingface # To use HuggingFace models.
+faiss-cpu # To use FAISS vector store DB.
+chromadb # To use Chroma vector store DB.
+langchain_groq # To use free groq interface llms.
+unstructured # To load websites by using UnstructuredURLLoader
+libmagic # To load websites by using UnstructuredURLLoader
+python-magic # To load websites by using UnstructuredURLLoader
+python-magic-bin # To load websites by using UnstructuredURLLoader

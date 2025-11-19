@@ -1,0 +1,13 @@
+prefix=E:/Gen_AI/ALL_RAG_Apps/RAG_py3.11/Library
+exec_prefix=E:/Gen_AI/ALL_RAG_Apps/RAG_py3.11/Library
+libdir=E:/Gen_AI/ALL_RAG_Apps/RAG_py3.11/Library/lib
+sharedlibdir=E:/Gen_AI/ALL_RAG_Apps/RAG_py3.11/Library/lib
+includedir=E:/Gen_AI/ALL_RAG_Apps/RAG_py3.11/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
