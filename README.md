@@ -1,2 +1,2 @@
 # All RAG Apps
-![All_rages](../Images/All_Rags.jpeg)
+<img src="../Images/All_Rags.jpeg" alt="All_rages" width="600"/>
