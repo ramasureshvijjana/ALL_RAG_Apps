@@ -1,9 +1,9 @@
 ipykernel
-langchain
+langchain==0.2.11
 langchain-openai
 python-dotenv
-langchain-community
-langchain_core
+langchain-community==0.2.6
+langchain-core==0.2.24
 pandas
 pypdf # Used for load the pdf files in LangChain
 bs4 # bs - BeautifulSoup : library for web scraping and parsing HTML or XML documents
