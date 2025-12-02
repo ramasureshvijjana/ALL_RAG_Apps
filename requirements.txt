@@ -16,6 +16,8 @@ chroma # To use vector store Chroma DB.
 langchain_openai # To use open AI models.
 sentence-transformers # To use HuggingFace models.
 langchain-huggingface # To use HuggingFace models.
+hf_xet # Dependent library of "langchain-huggingface".
+accelerate # To use AutoModelForCausalLM from transformers 
 faiss-cpu # To use FAISS vector store DB.
 chromadb # To use Chroma vector store DB.
 langchain_groq # To use free groq interface llms.
