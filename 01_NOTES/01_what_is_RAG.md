@@ -5,7 +5,7 @@
 -----------
 ## Ingestion, Retrieval, Generator
 
-<img src="./Images/RAG_stages.png" alt="RAG_stages" width="600"/>  
+<img src="../Images/RAG_Stages.jpeg" alt="RAG_stages"/>  
 
 ### 1. Ingestion:
 >The process of loading data/documents, splitting them into chunks, converting them into embeddings, and storing them in a vector database.
