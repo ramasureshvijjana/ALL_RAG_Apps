@@ -38,7 +38,7 @@ def load_documents(data_folder_path:str)->list:
         return docs
     
 # Split the loaded documents into smaller chunks.
-def split_documents(docs:list, chunk_size:int=100, chunk_overlap:int = 10)->list:
+def chunk_documents(docs:list, chunk_size:int=200, chunk_overlap:int = 50)->list:
 
     # Create a RecursiveCharacterTextSplitter to split the documents into smaller chunks.
     r_text_splitter = RecursiveCharacterTextSplitter(chunk_size = chunk_size, chunk_overlap = chunk_overlap)
@@ -56,7 +56,7 @@ def split_documents(docs:list, chunk_size:int=100, chunk_overlap:int = 10)->list
     return chunked_docs
 
 
-def embed_documents(chunked_docs:list, vsdb_path:str = "vsDB/chroma"):
+def embed_documents(chunked_docs:list, vsdb_path:str = "./02_basic_rag/VSDB/chroma"):
 
     # Loading the embedding model from huggingface
     embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -74,8 +74,8 @@ def embed_documents(chunked_docs:list, vsdb_path:str = "vsDB/chroma"):
 
 def main(data_folder_path):
     docs = load_documents(data_folder_path)
-    chunked_docs = split_documents(docs)
-    chroma_db = embed_documents(chunked_docs, vsdb_path="vsDB/chroma")
+    chunked_docs = chunk_documents(docs)
+    chroma_db = embed_documents(chunked_docs, vsdb_path="./02_basic_rag/VSDB/chroma")
     print("Ingestion pipeline executed successfully.")
 
 
